@@ -58,6 +58,8 @@ java -classpath bin main.java.com.example.app.App
 ```
 ```bash
 java -classpath bin com.example.app.App
+java -classpath bin main.java.com.example.app.App 
+
 ```
 
 - **`-classpath bin`**: Sets the classpath to the `bin` directory, where the compiled `.class` files are stored.
