@@ -44,14 +44,20 @@ find src -name "*.java" | xargs javac -d bin
 
 - **`src/**/*.java`**: Recursively compiles all `.java` files in the `src` directory.
 
+### 2.1 alias 
+- `alias` javaCompile="find src -name "*.java" | xargs javac -d bin"
+- `alias` javaClean="rm -rf bin"
+
+
 ## 3. Run the Application
 
 Once the compilation is done, you can run the main class (`App.java`) using the `java` command:
 
 ```bash
-
+java -classpath bin main.java.com.example.app.App 
+```
+```bash
 java -classpath bin com.example.app.App
-
 ```
 
 - **`-classpath bin`**: Sets the classpath to the `bin` directory, where the compiled `.class` files are stored.
