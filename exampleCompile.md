@@ -34,9 +34,13 @@ To compile all the Java files in the `src` directory and store the compiled `.cl
 ```bash
 
 javac -d bin src/**/*.java
+```
 ||
+```bash
 javac -d bin src/com/example/app/*.java src/com/example/utils/math/*.java src/com/example/utils/message/*.java
+```
 ||
+```bash
 find src -name "*.java" | xargs javac -d bin
 ```
 
@@ -50,7 +54,7 @@ Once the compilation is done, you can run the main class (`App.java`) using the 
 
 ```bash
 
-java -classpath bin com.example.app.App
+java -classpath bin main.java.com.example.app.App
 
 ```
 
